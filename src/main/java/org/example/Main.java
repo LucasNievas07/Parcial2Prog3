@@ -23,7 +23,6 @@ public class Main {
     }
 
     public static boolean isMutant(String[] dna){
-        boolean mutante = false;
         int contFilas;
         int contColumnas;
         int contMutantes=0;
@@ -117,7 +116,6 @@ public class Main {
             }
         }
 
-
         //Derecha a Izquierda
         for (int i = (dnaMatrix.length-1); i >= (dnaMatrix.length/2); i--) {
             for (int j = 0; j < (dnaMatrix[0].length/2); j++) {
@@ -127,10 +125,11 @@ public class Main {
             }
         }
 
+        //Compruebo la cantidad de mutantes
         if(contMutantes>=2){
-            mutante=true;
+            return true;
         }
 
-        return mutante;
+        return false;
     }
 }

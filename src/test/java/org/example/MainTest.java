@@ -39,7 +39,7 @@ class MainTest {
                 "TTTTTT",
                 "AAAAGG",
                 "CCCCTA",
-                "TYTTTT"
+                "TGTTTT"
         };
         assertTrue(Main.isMutant(mutantDNA));
     }
